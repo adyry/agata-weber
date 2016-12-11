@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-2">
+    <title>Weber aranżacje wnętrz</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Developed by Adrian Kowalczewski, www.adyry.com -->
+</head>
+
+<body>
+<div class="container">
+    <div class="row row-content" >
+
+        <div class="col-xs-12 col-sm-6 col-lg-4 contact nomargin">
+          <div class="contact-content">
+            <div class="aligner">
+              <!--<img src="img/logo.png" class="logo">-->
+              <div id="logo-html" class="text-center"><p id="upper">WEBER</p><hr id="logo-line"><p id="lower">aranżacje wnętrz</p></div><div class="col-xs-12 footer-contact">
+            <div class="col-xs-3 text-center"><a href="tel:+48660483491"><i class="fa fa-phone fa-2x"></i></div>
+            <div class="phonetooltip"></div>
+            <div class="col-xs-3 text-center"><a href="mailto:biuro@agataweber.pl" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></div>
+            <div class="col-xs-3 text-center"><a href="http://www.facebook.com/weber.aranzacje.wnetrz" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a></div>
+            <div class="col-xs-3 text-center"><a href="https://www.instagram.com/weber_aranzacje_wnetrz/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></div>
+          </div></div>
+        </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-lg-8 menu">
+          <div class="row">
+            <div class="col-sm-12 col-lg-4 menu-sub" id="wnetrza">
+              <img src="img/wnetrze1.jpg" class="bgimage">
+                <a href="http://agataweber.pl/site2016/project-type/wnetrza/" class="menu-links">
+                  <p>wnętrza</p>
+                </a>
+            </div>
+            <div class="col-sm-12 col-lg-4 menu-sub" id="meble">
+              <img src="img/meble1.jpg" class="bgimage">
+              <a href="http://agataweber.pl/site2016/project-type/meble/" class="menu-links">
+                  <p>meble</p>
+              </a>
+            </div>
+            <div class="col-sm-12 col-lg-4 menu-sub" id="elewacje">
+              <img src="img/fasada1.jpg" class="bgimage">
+              <a href="http://agataweber.pl/site2016/project-type/elewacje/" class="menu-links">
+                  <p>elewacje</p>
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+</div>
+<script>
+  $(document).ready(function(){
+    $(".menu-sub").mouseenter(function(){
+      $(this).find('.bgimage').animate({
+        opacity: 0.7},
+        200, function() {});
+      $(this).find('p').css({
+        'font-weight': 'bold'
+      });
+    })
+    $(".menu-sub").mouseleave(function(){
+      $(this).find('.bgimage').animate({
+        opacity: 0.4},
+        200, function() {});
+        $(this).find('p').css({
+          'font-weight': 'normal'
+        });
+    })
+  })
+</script>
+
+</body>
+</html>
