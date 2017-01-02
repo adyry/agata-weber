@@ -7,12 +7,11 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-2">
     <title>Weber aranżacje wnętrz</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="css/mystyles.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/bootstrap-social.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- Developed by Adrian Kowalczewski, www.adyry.com -->
 </head>
 
@@ -27,11 +26,11 @@
               <!--<img src="img/logo.png" class="logo">-->
 
               <div class="col-xs-12 footer-contact">
-                <div class="col-xs-3 text-center"><a href="tel:+48660483491"><i class="fa fa-phone fa-2x"></i></div>
-                  <div class="phonetooltip"></div>
-                  <div class="col-xs-3 text-center"><a href="mailto:biuro@agataweber.pl" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a></div>
-                  <div class="col-xs-3 text-center"><a href="http://www.facebook.com/weber.aranzacje.wnetrz" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a></div>
-                  <div class="col-xs-3 text-center"><a href="https://www.instagram.com/weber_aranzacje_wnetrz/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></div>
+                  <div class="icons"><a href="tel:+48660483491" data-toggle="tooltip" title="+48 660 483 491"><i class="fa fa-phone fa-2x"></i></a></div>
+                  <div class="icons"><a href="https://goo.gl/maps/xxTJ3EenyWx" data-toggle="tooltip" title="ul.Farna 1/2, 63-100 Śrem" target="_blank"><i class="fa fa-map-marker fa-2x"></i></a></div>
+                  <div class="icons"><a href="mailto:biuro@agataweber.pl" target="_blank" data-toggle="tooltip" title="biuro@agataweber.pl"><i class="fa fa-envelope-o fa-2x"></i></a></div>
+                  <div class="icons"><a href="http://www.facebook.com/weber.aranzacje.wnetrz" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a></div>
+                  <div class="icons"><a href="https://www.instagram.com/weber_aranzacje_wnetrz/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></div>
                 </div></div>
         </div>
         </div>
@@ -63,6 +62,7 @@
 </div>
 <script>
   $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
     $(".menu-sub").mouseenter(function(){
       $(this).find('.bgimage').animate({
         opacity: 0.7},

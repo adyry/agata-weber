@@ -31,10 +31,6 @@ body{
     @include nomargin;
 }
 
-.container div {
-  overflow: hidden;
-}
-
 .row-content {
   @include nomargin;
 }
@@ -66,6 +62,8 @@ body{
     padding: 10px;
     border-top: 1px solid $footer-color;
     height: $hline-offset;
+    display: flex;
+    justify-content:space-around;
 }
 
 .footer-contact a{
@@ -74,6 +72,15 @@ body{
 
 .footer-contact a:hover{
   color: $footer-hover-color;
+}
+
+.icons {
+  display: flex;
+  text-align: center;
+}
+
+.tooltip {
+  font-size: 15px;
 }
 
 /* Logo */

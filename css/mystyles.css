@@ -11,9 +11,6 @@ body {
   padding: 0 0;
   margin: 0 0; }
 
-.container div {
-  overflow: hidden; }
-
 .row-content {
   padding: 0 0;
   margin: 0 0; }
@@ -48,13 +45,25 @@ body {
   bottom: 0px;
   padding: 10px;
   border-top: 1px solid grey;
-  height: 50px; }
+  height: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
 
 .footer-contact a {
   color: grey; }
 
 .footer-contact a:hover {
   color: #5e5463; }
+
+.icons {
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center; }
+
+.tooltip {
+  font-size: 15px; }
 
 /* Logo */
 #logo-html {
