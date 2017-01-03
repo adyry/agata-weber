@@ -1,7 +1,3 @@
-@font-face {
-  font-family: 'Avalonn';
-  src: url("../fonts/AVALONN.TTF"); }
-
 body {
   font-family: 'Avalonn'; }
 
@@ -30,6 +26,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
+  bottom: 0px;
   width: 100%; }
 
 .contact {
@@ -41,10 +38,8 @@ body {
   border-bottom: 1px solid #2c2a2d; }
 
 .footer-contact {
-  position: relative;
-  bottom: 0px;
   padding: 10px;
-  border-top: 1px solid grey;
+  border-top: 1px solid #2c2a2d;
   height: 50px;
   display: -ms-flexbox;
   display: flex;
@@ -52,7 +47,7 @@ body {
   justify-content: space-around; }
 
 .footer-contact a {
-  color: grey; }
+  color: #2c2a2d; }
 
 .footer-contact a:hover {
   color: #5e5463; }
@@ -114,10 +109,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: 0.4; }
-
-.cont-bg {
-  opacity: 0.2; }
+  opacity: 0.6; }
 
 a.menu-links {
   display: block;
@@ -139,7 +131,7 @@ a.menu-links {
     transform: translate(-50%, -50%); } }
 
 /* Medium devices*/
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   p {
     font-size: 15pt; }
   .contact {
@@ -166,4 +158,4 @@ a.menu-links {
     position: absolute;
     bottom: 49px;
     /*1px goes missing */
-    border-bottom: 1px solid grey; } }
+    border-bottom: 1px solid #2c2a2d; } }
