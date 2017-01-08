@@ -1,3 +1,4 @@
+$screen-xlg-min: 1440px;
 $screen-lg-min: 1200px;
 $screen-sm-min: 700px;
 $contact-height: 100vh;
@@ -69,6 +70,7 @@ body{
 .icons {
   display: flex;
   text-align: center;
+  margin: auto;
 }
 
 .tooltip {
@@ -192,18 +194,47 @@ a.menu-links {
     bottom: $hline-offset - 1px; /*1px goes missing */
     border-bottom: 1px solid $footer-color;
   }
-  // /* logo */
-  // #logo-html {
-  //     width: 25vw;
-  // }
-  // #upper {
-  //   font-size: 5vw;
-  //   letter-spacing: 1vw;
-  //   text-indent: 0.5vw;
-  //   line-height: 6vw;
-  // }
-  // #lower {
-  //   font-size: $lg-font-size;
-  // }
+}
 
+@media (min-width: $screen-xlg-min) {
+  #logo-html {
+    width: 15.28vw;
+    margin: auto;
+    color: #2c2a2d;
+  }
+
+  #logo-line {
+    height: 0px;
+    border-bottom: 1px solid #2c2a2d;
+    margin-bottom: 0.185vw;
+    margin-top: 0;
+  }
+
+  #upper {
+    font-size: 2.5vw;
+    letter-spacing: 1.39vw;
+    margin-top: 0.185vw;
+    line-height: 1.66vw;
+  }
+
+  #upper .last {
+    letter-spacing: 0px;
+  }
+
+  #lower {
+    font-size: 1.3vw;
+    margin-bottom: 0.74vw;
+    letter-spacing: 0.17vw;
+  }
+
+  .footer-contact {
+    height: 3.47vw;
+  }
+
+  .fa-2x {
+    font-size: 1.8vw;
+  }
+  a.menu-links {
+    bottom: 3.4vw;
+  }
 }

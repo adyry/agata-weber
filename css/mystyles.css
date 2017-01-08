@@ -55,7 +55,8 @@ body {
 .icons {
   display: -ms-flexbox;
   display: flex;
-  text-align: center; }
+  text-align: center;
+  margin: auto; }
 
 .tooltip {
   font-size: 15px; }
@@ -159,3 +160,31 @@ a.menu-links {
     bottom: 49px;
     /*1px goes missing */
     border-bottom: 1px solid #2c2a2d; } }
+
+@media (min-width: 1440px) {
+  #logo-html {
+    width: 15.28vw;
+    margin: auto;
+    color: #2c2a2d; }
+  #logo-line {
+    height: 0px;
+    border-bottom: 1px solid #2c2a2d;
+    margin-bottom: 0.185vw;
+    margin-top: 0; }
+  #upper {
+    font-size: 2.5vw;
+    letter-spacing: 1.39vw;
+    margin-top: 0.185vw;
+    line-height: 1.66vw; }
+  #upper .last {
+    letter-spacing: 0px; }
+  #lower {
+    font-size: 1.3vw;
+    margin-bottom: 0.74vw;
+    letter-spacing: 0.17vw; }
+  .footer-contact {
+    height: 3.47vw; }
+  .fa-2x {
+    font-size: 1.8vw; }
+  a.menu-links {
+    bottom: 3.4vw; } }
